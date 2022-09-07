@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title></title>
+
+        <script src="jquery-3.5.1.min.js"></script>
+        <style>
+            #ass{
+                width: 200px;
+                height: 500px;
+                background-color: aqua;
+            }
+        </style>
+   
+    </head>
+    <body>
+        <div id="ass"></div>
+
+        <script>
+
+       var renklerr=[];
+       
+       for(var i=0;i<4;i++)
+       {
+        renklerr[i]=[];
+       }
+
+        for(var i=0;i<3;i++)
+        {
+            for(var j=0;j<4;j++)
+            {
+                renklerr[i][j]=i+" , "+j;
+            }
+
+        }    
+
+        for(var i=0;i<3;i++)
+        {
+
+            for(var j=0;j<4;j++)
+            {
+                  document.getElementById("ass").innerHTML+=renklerr[i][j];
+                  document.getElementById("ass").innerHTML+="<br>";
+            }
+
+        }  
+
+        </script>
+
+    </body>
+</html>
